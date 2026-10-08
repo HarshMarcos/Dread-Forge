@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: unzip -q *.zip
       - uses: actions/setup-node@v4
-        with: {node-version: 20}
+        with: {node-version: 22}
       - uses: actions/setup-java@v4
         with: {distribution: temurin, java-version: 17}
       - run: cd df && npm install && npm run build && npx cap add android
